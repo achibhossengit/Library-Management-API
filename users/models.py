@@ -4,4 +4,6 @@ from django.db import models
 class Member(models.Model):
     name = models.CharField()
     member_since = models.DateField(auto_now_add=True)
-    
+
+    def __str__(self):
+        return self.name
