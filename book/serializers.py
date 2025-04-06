@@ -7,6 +7,9 @@ class BookSerializer(ModelSerializer):
         model = Book
         fields = '__all__'
 
+    def save(self, **kwargs):
+        return super().save(**kwargs)
+
 class CategorySerializer(ModelSerializer):
     class Meta:
         model = Category
