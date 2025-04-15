@@ -15,7 +15,7 @@ class MemberViewSet(ModelViewSet):
     """
 
     http_method_names = ['get', 'head', 'option']
-    group = Group.objects.get(name='Member')
+    group, create = Group.objects.get_or_create(name='Member')
     queryset = User.objects.filter(groups=group)
     serializer_class = UserSerializer
     permission_classes = [IsAdminOrLibrarian]
