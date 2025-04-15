@@ -9,13 +9,20 @@ from api.permissions import IsAdminOrLibrarianOrReadOnly
 # Create your views here.
 
 class BorrowViewSet(ModelViewSet):
+    """
+        API endpoint for managing borrowing records.
+
+        - **GET**: Staff/Librarians can view all records; members can view their own.
+        - **POST**: Create a new borrowing record.
+        - **PUT/PATCH**: Update a record (*Owner only*; uses `ReturnSerializer` for PUT).
+        - **DELETE**: Delete a record (*Admin/Librarian only*).
+    """
 
     def get_queryset(self):
         if self.request.user.is_staff or self.request.user.groups.filter(name='Librarian').exists():
             return BorrowRecord.objects.all()
         return BorrowRecord.objects.filter(member=self.request.user)
     
-
     def get_permissions(self):
         if self.action in ['update', 'partial_update']:
             return [IsOwner()]
