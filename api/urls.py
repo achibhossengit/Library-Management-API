@@ -4,12 +4,14 @@ from rest_framework_nested.routers import NestedDefaultRouter
 from book.views import BookViewSet, CategoryViewSet
 from author.views import AuthorViewSet, AuthorsBookViewSet
 from borrow_book.views import BorrowViewSet
+from users.views import MemberViewSet
 
 routers = DefaultRouter()
 routers.register('books', BookViewSet)
 routers.register('categories', CategoryViewSet)
 routers.register('authors', AuthorViewSet)
-routers.register('borrow-list', BorrowViewSet)
+routers.register('borrow-list', BorrowViewSet, basename='borrow-records')
+routers.register('members', MemberViewSet)
 
 author_router = NestedDefaultRouter(routers,'authors', lookup='author')
 author_router.register('books', AuthorsBookViewSet, basename='author-books')

@@ -4,13 +4,17 @@ from author.serializers import AuthorSerializer, AuthorBookSerializer
 from author.models import Author
 from book.models import Book
 from book.serializers import BookSerializer
+from api.permissions import IsAdminOrLibrarianOrReadOnly
 # Create your views here.
 
 class AuthorViewSet(ModelViewSet):
     queryset = Author.objects.all()
     serializer_class = AuthorSerializer
+    permission_classes = [IsAdminOrLibrarianOrReadOnly]
 
 class AuthorsBookViewSet(ModelViewSet):
+    permission_classes = [IsAdminOrLibrarianOrReadOnly]
+
     def get_serializer_class(self):
         if self.request.method == 'POST' or self.request.method == 'PUT':
             return AuthorBookSerializer

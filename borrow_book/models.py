@@ -9,3 +9,6 @@ class BorrowRecord(models.Model):
     borrow_date = models.DateField(auto_now_add=True)
     due_date = models.DateField()
     return_on = models.DateField(null=True, blank=True)
+
+    def __str__(self):
+        return f"Record of {self.member.username}"
