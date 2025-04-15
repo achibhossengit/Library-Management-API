@@ -12,37 +12,86 @@
     { "model": "book.category", "pk": 4, "fields": { "name": "Dystopian", "description": "Dark futuristic societies." } },
     { "model": "book.category", "pk": 5, "fields": { "name": "Horror", "description": "Scary and thrilling stories." } },
   
-    { "model": "book.book", "pk": 1, "fields": { "title": "Harry Potter 1", "author": 1, "Category": 1, "copies": 10 } },
-    { "model": "book.book", "pk": 2, "fields": { "title": "Harry Potter 2", "author": 1, "Category": 1, "copies": 8 } },
-    { "model": "book.book", "pk": 3, "fields": { "title": "Fantastic Beasts", "author": 1, "Category": 1, "copies": 5 } },
+    { "model": "book.book", "pk": 1, "fields": { "title": "Harry Potter 1", "author": 1, "category": 1, "copies": 10 } },
+    { "model": "book.book", "pk": 2, "fields": { "title": "Harry Potter 2", "author": 1, "category": 1, "copies": 8 } },
+    { "model": "book.book", "pk": 3, "fields": { "title": "Fantastic Beasts", "author": 1, "category": 1, "copies": 5 } },
   
-    { "model": "book.book", "pk": 4, "fields": { "title": "1984", "author": 2, "Category": 4, "copies": 12 } },
-    { "model": "book.book", "pk": 5, "fields": { "title": "Animal Farm", "author": 2, "Category": 4, "copies": 10 } },
-    { "model": "book.book", "pk": 6, "fields": { "title": "Homage to Catalonia", "author": 2, "Category": 4, "copies": 4 } },
+    { "model": "book.book", "pk": 4, "fields": { "title": "1984", "author": 2, "category": 4, "copies": 12 } },
+    { "model": "book.book", "pk": 5, "fields": { "title": "Animal Farm", "author": 2, "category": 4, "copies": 10 } },
+    { "model": "book.book", "pk": 6, "fields": { "title": "Homage to Catalonia", "author": 2, "category": 4, "copies": 4 } },
   
-    { "model": "book.book", "pk": 7, "fields": { "title": "Pride and Prejudice", "author": 3, "Category": 3, "copies": 6 } },
-    { "model": "book.book", "pk": 8, "fields": { "title": "Emma", "author": 3, "Category": 3, "copies": 5 } },
-    { "model": "book.book", "pk": 9, "fields": { "title": "Sense and Sensibility", "author": 3, "Category": 3, "copies": 7 } },
+    { "model": "book.book", "pk": 7, "fields": { "title": "Pride and Prejudice", "author": 3, "category": 3, "copies": 6 } },
+    { "model": "book.book", "pk": 8, "fields": { "title": "Emma", "author": 3, "category": 3, "copies": 5 } },
+    { "model": "book.book", "pk": 9, "fields": { "title": "Sense and Sensibility", "author": 3, "category": 3, "copies": 7 } },
   
-    { "model": "book.book", "pk": 10, "fields": { "title": "Tom Sawyer", "author": 4, "Category": 1, "copies": 9 } },
-    { "model": "book.book", "pk": 11, "fields": { "title": "Huckleberry Finn", "author": 4, "Category": 1, "copies": 10 } },
-    { "model": "book.book", "pk": 12, "fields": { "title": "A Connecticut Yankee", "author": 4, "Category": 1, "copies": 4 } },
+    { "model": "book.book", "pk": 10, "fields": { "title": "Tom Sawyer", "author": 4, "category": 1, "copies": 9 } },
+    { "model": "book.book", "pk": 11, "fields": { "title": "Huckleberry Finn", "author": 4, "category": 1, "copies": 10 } },
+    { "model": "book.book", "pk": 12, "fields": { "title": "A Connecticut Yankee", "author": 4, "category": 1, "copies": 4 } },
   
-    { "model": "book.book", "pk": 13, "fields": { "title": "Murder on the Orient Express", "author": 5, "Category": 2, "copies": 6 } },
-    { "model": "book.book", "pk": 14, "fields": { "title": "The ABC Murders", "author": 5, "Category": 2, "copies": 7 } },
-    { "model": "book.book", "pk": 15, "fields": { "title": "Death on the Nile", "author": 5, "Category": 2, "copies": 8 } },
+    { "model": "book.book", "pk": 13, "fields": { "title": "Murder on the Orient Express", "author": 5, "category": 2, "copies": 6 } },
+    { "model": "book.book", "pk": 14, "fields": { "title": "The ABC Murders", "author": 5, "category": 2, "copies": 7 } },
+    { "model": "book.book", "pk": 15, "fields": { "title": "Death on the Nile", "author": 5, "category": 2, "copies": 8 } },
   
-    { "model": "book.book", "pk": 16, "fields": { "title": "The Shining", "author": 6, "Category": 5, "copies": 9 } },
-    { "model": "book.book", "pk": 17, "fields": { "title": "It", "author": 6, "Category": 5, "copies": 10 } },
-    { "model": "book.book", "pk": 18, "fields": { "title": "Carrie", "author": 6, "Category": 5, "copies": 6 } },
-    { "model": "book.book", "pk": 19, "fields": { "title": "Misery", "author": 6, "Category": 5, "copies": 7 } },
-    { "model": "book.book", "pk": 20, "fields": { "title": "Doctor Sleep", "author": 6, "Category": 5, "copies": 5 } },
-  
-    { "model": "users.member", "pk": 1, "fields": { "name": "Achib Hossen", "member_since": "2024-01-10" } },
-    { "model": "users.member", "pk": 2, "fields": { "name": "Shimul Rahman", "member_since": "2023-11-20" } },
-    { "model": "users.member", "pk": 3, "fields": { "name": "Rafi Ahmed", "member_since": "2022-07-15" } },
-    { "model": "users.member", "pk": 4, "fields": { "name": "Mim Jahan", "member_since": "2024-04-01" } },
-    { "model": "users.member", "pk": 5, "fields": { "name": "Sakib Islam", "member_since": "2023-09-05" } }
+    { "model": "book.book", "pk": 16, "fields": { "title": "The Shining", "author": 6, "category": 5, "copies": 9 } },
+    { "model": "book.book", "pk": 17, "fields": { "title": "It", "author": 6, "category": 5, "copies": 10 } },
+    { "model": "book.book", "pk": 18, "fields": { "title": "Carrie", "author": 6, "category": 5, "copies": 6 } },
+    { "model": "book.book", "pk": 19, "fields": { "title": "Misery", "author": 6, "category": 5, "copies": 7 } },
+    { "model": "book.book", "pk": 20, "fields": { "title": "Doctor Sleep", "author": 6, "category": 5, "copies": 5 } },
 
-  ]
+    { 
+      "model": "auth.user", 
+      "pk": 1, 
+      "fields": { 
+          "username": "achib_hossen", 
+          "email": "achib@example.com", 
+          "first_name": "Achib", 
+          "last_name": "Hossen", 
+          "date_joined": "2024-01-10T10:30:00Z" 
+      } 
+    },
+    { 
+        "model": "auth.user", 
+        "pk": 2, 
+        "fields": { 
+            "username": "shimul_rahman", 
+            "email": "shimul@example.com", 
+            "first_name": "Shimul", 
+            "last_name": "Rahman", 
+            "date_joined": "2023-11-20T14:45:00Z" 
+        } 
+    },
+    { 
+        "model": "auth.user", 
+        "pk": 3, 
+        "fields": { 
+            "username": "rafi_ahmed", 
+            "email": "rafi@example.com", 
+            "first_name": "Rafi", 
+            "last_name": "Ahmed", 
+            "date_joined": "2022-07-15T09:20:00Z" 
+        } 
+    },
+    { 
+        "model": "auth.user", 
+        "pk": 4, 
+        "fields": { 
+            "username": "mim_jahan", 
+            "email": "mim@example.com", 
+            "first_name": "Mim", 
+            "last_name": "Jahan", 
+            "date_joined": "2024-04-01T08:10:00Z" 
+        } 
+    },
+    { 
+        "model": "auth.user", 
+        "pk": 5, 
+        "fields": { 
+            "username": "sakib_islam", 
+            "email": "sakib@example.com", 
+            "first_name": "Sakib", 
+            "last_name": "Islam", 
+            "date_joined": "2023-09-05T12:00:00Z" 
+        } 
+    }
+]
   
